@@ -1,12 +1,21 @@
 # statisticnumber
+
  A digital scrolling component based on React. Contains the ordinary one-time scrolling effect, the linkage scrolling effect and the shaking effect.
+ 
 #Effect
+
 The realization of statistics, let the numbers roll up.
+
 #Look
+
 ![image](https://github.com/vlinr/statisticnumber/blob/master/readme/scroll.gif)
+
 #Install
+
 npm install --save-dev statisticnumber
+
 #Configuration
+
 {
   numAnimationConfig:Animation configuration parameters
   linkage:Whether to enable linkage。After opening, only the 0th parameter configuration takes effect。
@@ -24,7 +33,9 @@ npm install --save-dev statisticnumber
   style: style, 
   duration: Normal style execution time
  }
+ 
  #Example
+ 
  <StatisticNumber
     numAnimationConfig={animParams}
     linkage={true}  
