@@ -12,7 +12,7 @@ The realization of statistics, let the numbers roll up.
 
 ### Install
 
-npm install --save-dev statisticnumber
+<span style="color: green">npm install --save-dev statisticnumber</span>
 
 ### Configuration
 
