@@ -37,7 +37,11 @@ The realization of statistics, let the numbers roll up.
    duration: Normal style execution time  
  }  
  ```
- ### Example
+### GitHub
+
+![GITHUB](https://github.com/vlinr/react-scrollnumber)
+
+### Example
  ```javascript
  <ScrollNumber  
      numAnimationConfig={animParams}  
