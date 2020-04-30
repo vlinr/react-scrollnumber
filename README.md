@@ -10,14 +10,14 @@ The realization of statistics, let the numbers roll up.
 
 ![image](https://github.com/vlinr/statisticnumber/blob/master/readme/scroll.gif)
 
-### Install
+### Component Install
 ```javascript
   npm install --save-dev react-scrollnumber
 ```
 ```javascript
   yarn add react-scrollnumber
 ```
-### Running
+### Operate Independently
 ```javascript
   npm install
 ```
