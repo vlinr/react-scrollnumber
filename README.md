@@ -12,7 +12,7 @@ The realization of statistics, let the numbers roll up.
 
 ### Install
 
-  npm install --save-dev react-statisticnumber
+  npm install --save-dev react-statisticnumber<br />
   import '@/react-statisticnumber/dist/index.css'
 
 ### Configuration
