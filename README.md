@@ -16,7 +16,7 @@ The realization of statistics, let the numbers roll up.
   import '@/react-statisticnumber/dist/index.css'
 
 ### Configuration
-
+ ```javascript
 {  
    numAnimationConfig:Animation configuration parameters  
    linkage:Whether to enable linkage。After opening, only the 0th parameter configuration takes effect。  
@@ -34,9 +34,9 @@ The realization of statistics, let the numbers roll up.
    style: style,   
    duration: Normal style execution time  
  }  
- 
+ ```
  ### Example
- 
+ ```javascript
  <StatisticNumber  
      numAnimationConfig={animParams}  
      linkage={true}    
@@ -53,3 +53,4 @@ The realization of statistics, let the numbers roll up.
          color:'#7329d4'  
      }}  
 />  
+```
