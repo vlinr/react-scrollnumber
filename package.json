@@ -1,6 +1,6 @@
 {
   "name": "react-scrollnumber",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "scrolling numbers",
   "main": "dist/lib/index.js",
   "module": "dist/lib/index.js",
@@ -44,18 +44,11 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vlinr/react-scrollnumber"
-  },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
-    "antd": "^4.1.5",
-    "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2",
-    "redux": "^4.0.5"
+    "react-router-dom": "^5.1.2"
   },
   "keywords": [
     "statistics",

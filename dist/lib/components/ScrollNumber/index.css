@@ -1,0 +1,244 @@
+.scrollBox {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+.scrollBox label {
+  color: rgba(0, 0, 0, 0.45);
+  height: 1em;
+  display: block;
+  font-size: 0.6em;
+  margin-bottom: 8px;
+  font-family: 'Microsoft YaHei';
+}
+.scrollBox .scrollContent {
+  overflow: hidden;
+  text-align: left;
+}
+.scrollBox .scrollContent .symbol {
+  margin-right: 2px;
+  display: inline-block;
+}
+.scrollBox .scrollContent .scrollNumer {
+  overflow: hidden;
+  height: 1em;
+  display: inline-block;
+}
+.scrollBox .scrollContent .scrollNumer .number span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 1em;
+}
+@-webkit-keyframes number0 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -10em;
+  }
+}
+@keyframes number0 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -10em;
+  }
+}
+@-webkit-keyframes number1 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -1em;
+  }
+}
+@keyframes number1 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -1em;
+  }
+}
+@-webkit-keyframes number2 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -2em;
+  }
+}
+@keyframes number2 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -2em;
+  }
+}
+@-webkit-keyframes number3 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -3em;
+  }
+}
+@keyframes number3 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -3em;
+  }
+}
+@-webkit-keyframes number4 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -4em;
+  }
+}
+@keyframes number4 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -4em;
+  }
+}
+@-webkit-keyframes number5 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -5em;
+  }
+}
+@keyframes number5 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -5em;
+  }
+}
+@-webkit-keyframes number6 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -6em;
+  }
+}
+@keyframes number6 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -6em;
+  }
+}
+@-webkit-keyframes number7 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -7em;
+  }
+}
+@keyframes number7 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -7em;
+  }
+}
+@-webkit-keyframes number8 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -8em;
+  }
+}
+@keyframes number8 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -8em;
+  }
+}
+@-webkit-keyframes number9 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -9em;
+  }
+}
+@keyframes number9 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -9em;
+  }
+}
+@-webkit-keyframes number10 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -10em;
+  }
+}
+@keyframes number10 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -10em;
+  }
+}
+.scrollBox .scrollContent .scrollNumer:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.scrollBox .scrollContent .scroll0 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll1 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll2 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll3 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll4 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll5 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll6 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll7 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll8 .number {
+  margin-top: -10em;
+}
+.scrollBox .scrollContent .scroll9 .number {
+  margin-top: -10em;
+}
+
