@@ -11,10 +11,14 @@ The realization of statistics, let the numbers roll up.
 ![image](https://github.com/vlinr/statisticnumber/blob/master/readme/scroll.gif)
 
 ### Install
-
-  <div style="background:#000">npm install --save-dev react-statisticnumber<br /></div>
+```javascript
+  npm
+  npm install --save-dev react-statisticnumber
+```
+```javascript
+  style
   import '@/react-statisticnumber/dist/index.css'
-
+```
 ### Configuration
  ```javascript
 {  
