@@ -1,4 +1,4 @@
-# react-statisticnumber
+# react-scrollnumber
 
  A digital scrolling component based on React. Contains the ordinary one-time scrolling effect, the linkage scrolling effect and the shaking effect.
  
@@ -12,12 +12,12 @@ The realization of statistics, let the numbers roll up.
 
 ### Install
 ```javascript
-  npm install --save-dev react-statisticnumber
+  npm install --save-dev react-scrollnumber
 ```
 ### Style
 ```javascript
   Import style files
-  import '@/react-statisticnumber/dist/index.css'
+  import '@/react-scrollnumber/dist/index.css'
 ```
 ### Configuration
  ```javascript
@@ -41,7 +41,7 @@ The realization of statistics, let the numbers roll up.
  ```
  ### Example
  ```javascript
- <StatisticNumber  
+ <ScrollNumber  
      numAnimationConfig={animParams}  
      linkage={true}    
      direction={'left'}   
