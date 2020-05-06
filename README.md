@@ -46,9 +46,8 @@ The realization of statistics, let the numbers roll up.
  }  
  ```
 ### Example
-
- ```javascript
  Animation Params
+ ```javascript
  const animParams = [
         {
             animationDuration: 10,
