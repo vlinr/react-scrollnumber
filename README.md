@@ -36,7 +36,8 @@ or
   yarn
 ```
 
-### Github Address
+<!-- ### Github Address -->
+### Npm Address
 
 <!-- <a href="https://github.com/vlinr/react-scrollnumber/">react-scrollnumber</a> -->
 <a href="https://www.npmjs.com/package/react-scrollnumber">react-scrollnumber</a>
