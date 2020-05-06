@@ -1,6 +1,6 @@
 {
   "name": "react-scrollnumber",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "scrolling numbers",
   "main": "dist/lib/index.js",
   "module": "dist/lib/index.js",
