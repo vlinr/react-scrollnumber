@@ -18,6 +18,14 @@ The realization of statistics, let the numbers roll up.
 ```javascript
   yarn add react-scrollnumber
 ```
+### Operate Independently
+```javascript
+  npm install
+```
+```javascript
+  npm run dev
+```
+
 ### Configuration
 
  ```javascript
@@ -39,12 +47,7 @@ The realization of statistics, let the numbers roll up.
    duration: Normal style execution time  
  }  
  ```
-### GitHub
-
-![GITHUB](https://github.com/vlinr/react-scrollnumber)
-
 ### Example
-
  Animation Params
  ```javascript
  const animParams = [
