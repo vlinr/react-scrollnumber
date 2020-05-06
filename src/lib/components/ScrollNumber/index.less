@@ -1,19 +1,24 @@
 @scrollHeight: 1em;
+@nameList: number0, number1, number2, number3, number4, number5, number6, number7, number8, number9, number10;
+
 .scrollBox {
     display: inline-block;
     text-align: center;
     overflow: hidden;
+
     label {
-        color: rgba(0,0,0,.45);
+        color: rgba(0, 0, 0, .45);
         height: 1em;
         display: block;
         font-size: 0.6em;
-        margin-bottom:8px;
+        margin-bottom: 8px;
         font-family: 'Microsoft YaHei';
     }
+
     .scrollContent {
         overflow: hidden;
         text-align: left;
+
         .symbol {
             // float: left;
             margin-right: 2px;
@@ -24,6 +29,7 @@
             overflow: hidden;
             height: @scrollHeight;
             display: inline-block;
+
             // float: left;
             .number {
                 span {
@@ -34,113 +40,26 @@
                     font-size: @scrollHeight;
                 }
             }
-            @keyframes number0 {
-                0% {
-                    margin-top: 0;
-                }
 
-                100% {
-                    margin-top: -10 * @scrollHeight;
-                }
-            }
-            @keyframes number1 {
-                0% {
-                    margin-top: 0;
-                }
+            .keyFrame(@className, @index){
+                @keyframes @className {
+                    0% {
+                        margin-top: 0;
+                    }
 
-                100% {
-                    margin-top: -1 * @scrollHeight;
-                }
-            }
-            @keyframes number2 {
-                0% {
-                    margin-top: 0;
-                }
-
-                100% {
-                    margin-top: -2 * @scrollHeight;
+                    100% {
+                        margin-top: -@index * @scrollHeight;
+                    }
                 }
             }
 
-            @keyframes number3 {
-                0% {
-                    margin-top: 0;
-                }
-
-                100% {
-                    margin-top: -3 * @scrollHeight;
-                }
+            .keyFrameLoop(@i) when (@i < length(@nameList)+1) {
+                .keyFrame(extract(@nameList, @i), (@i)-1);
+                .keyFrameLoop(@i + 1);
             }
 
-            @keyframes number4 {
-                0% {
-                    margin-top: 0;
-                }
+            .keyFrameLoop(0);
 
-                100% {
-                    margin-top: -4 * @scrollHeight;
-                }
-            }
-
-            @keyframes number5 {
-                0% {
-                    margin-top: 0;
-                }
-
-                100% {
-                    margin-top: -5 * @scrollHeight;
-                }
-            }
-
-            @keyframes number6 {
-                0% {
-                    margin-top: 0;
-                }
-
-                100% {
-                    margin-top: -6 * @scrollHeight;
-                }
-            }
-
-            @keyframes number7 {
-                0% {
-                    margin-top: 0;
-                }
-
-                100% {
-                    margin-top: -7 * @scrollHeight;
-                }
-            }
-
-            @keyframes number8 {
-                0% {
-                    margin-top: 0;
-                }
-
-                100% {
-                    margin-top: -8 * @scrollHeight;
-                }
-            }
-
-            @keyframes number9 {
-                0% {
-                    margin-top: 0;
-                }
-
-                100% {
-                    margin-top: -9 * @scrollHeight;
-                }
-            }
-
-            @keyframes number10 {
-                0% {
-                    margin-top: 0;
-                }
-
-                100% {
-                    margin-top: -10 * @scrollHeight;
-                }
-            }
         }
 
         .scrollNumer:after {
@@ -149,71 +68,16 @@
             display: block;
         }
 
-        .scroll0 {
-            .number {
-                margin-top: -10 * @scrollHeight;
+        .scrollLoop(@i) when (@i < 10) {
+            .scroll@{i} {
+                .number {
+                    margin-top: -10 * @scrollHeight;
+                }
             }
+
+            .scrollLoop(@i + 1);
         }
 
-        .scroll1 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-
-            }
-        }
-
-        .scroll2 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-
-            }
-        }
-
-        .scroll3 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-
-            }
-        }
-
-        .scroll4 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-            }
-        }
-
-        .scroll5 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-
-            }
-        }
-
-        .scroll6 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-
-            }
-        }
-
-        .scroll7 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-
-            }
-        }
-
-        .scroll8 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-            }
-        }
-
-        .scroll9 {
-            .number {
-                margin-top: -10 * @scrollHeight;
-
-            }
-        }
+        .scrollLoop(0);
     }
 }
