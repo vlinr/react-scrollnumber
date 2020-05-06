@@ -15,6 +15,7 @@ The realization of statistics, let the numbers roll up.
 ```javascript
   npm install --save-dev react-scrollnumber
 ```
+or
 ```javascript
   yarn add react-scrollnumber
 ```
