@@ -8,7 +8,7 @@ The realization of statistics, let the numbers roll up.
 
 ### Look
 
-![image](https://github.com/vlinr/statisticnumber/blob/master/readme/scroll.gif)
+![image](https://img95.699pic.com/photo/40011/0709.jpg_wh860.jpg)
 
 ### Install
 
