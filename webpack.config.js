@@ -3,14 +3,32 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        app: path.join(__dirname, './src/index.js')
+        app: path.join(__dirname, './src/index.tsx')
     },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'index.js'
     },
+    devtool: "source-map",
+    performance: { //性能监控
+        hints: 'warning', //报警告，如果是false则关闭
+        maxEntrypointSize: 400000, 
+        maxAssetSize: 500000,   //500kb就会出警告
+        assetFilter: function (assetFilename) {
+            return assetFilename.endsWith('.js');  //只是提示js，超过大小会提示
+        }
+    },
+    resolve: {
+        extensions: [".js", ".json", ".ts", ".tsx"],
+    },
     module: {
         rules: [
+            {
+                test: /\.tsx?$/, use: {
+                    loader: "awesome-typescript-loader"
+                }
+            },
+            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
             {
                 test: /\.(js|jsx)$/,
                 use: {
@@ -51,7 +69,7 @@ module.exports = {
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 1024,
+                            limit: 1024 * 10,
                             fallback: {
                                 loader: 'file-loader',
                                 options: {
@@ -68,7 +86,7 @@ module.exports = {
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 1024,
+                            limit: 1024 * 10,
                             fallback: {
                                 loader: 'file-loader',
                                 options: {
@@ -78,12 +96,6 @@ module.exports = {
                         }
                     }
                 ]
-            },
-            {
-                test: /\.ts?$/,
-                use: {
-                    loader: 'ts-loader'
-                }
             }
         ]
     },

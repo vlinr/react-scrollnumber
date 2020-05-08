@@ -1,2 +1,2 @@
 import ScrollNumber from './components/ScrollNumber/ScrollNumber';
-export default ScrollNumber;
+export default ScrollNumber ;

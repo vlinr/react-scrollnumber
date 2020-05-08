@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import * as React from 'react';
+import { AnimationType } from '../lib/components/ScrollNumber/Type';
 import ScrollNumber from '../lib';
 const Example = () => {
-    const animParams = [
+    const animParams: Array<AnimationType> = [
         {
             animationDuration: 10,
             animationTimingFunction: 'linear',

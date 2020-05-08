@@ -1,14 +1,15 @@
 {
     "compilerOptions": {
+        "outDir": "./dist/jslib",
+        // "sourceMap": true,
+        "noImplicitAny": true,
         "module": "commonjs",
         "target": "es5",
-        "sourceMap": true,
-        "allowJs": true
+        "jsx": "react",
+        // "declaration":true,
+        "skipLibCheck": true, //忽略所有库中的声明文件（ *.d.ts）的类型检查。
     },
     "include": [
-        "src/*"
-    ],
-    "exclude": [
-        "node_modules"
+        "./src/**/*"
     ]
 }
